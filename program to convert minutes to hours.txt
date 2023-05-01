@@ -1,0 +1,25 @@
+import java.util.Scanner;
+ class Time{
+   public static void main(String args[]){
+   Scanner Scan=new Scanner(System.in);
+       System.out.print("enter the first watch time in minutes ");
+	   int min=Scan.nextInt();
+	   System.out.print("enter the second watch time in minutes ");
+	   int min2=Scan.nextInt();
+	   
+	   int hr=min/60;
+	   int mi=min%60;
+	   
+	   int hr2=min2/60;
+	   int mi2=min2%60;
+	   
+	   int hr3=(min+min2)/60;
+	   int mi3=(min+min2)%60;
+	   
+	   System.out.println("The time in first clock is "+hr+" hour "+mi+" minutes");
+	   System.out.println("The time in first clock is "+hr2+" hour "+mi2+" minutes");
+	   System.out.println("The time in first clock is "+hr3+" hour "+mi3+" minutes");
+	   
+	   
+   }
+ }

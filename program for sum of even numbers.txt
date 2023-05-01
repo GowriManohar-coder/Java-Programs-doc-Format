@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class EvenSum{
+     public static void main(String args[]){
+	 Scanner Scan = new Scanner(System.in);
+            System.out.println("sum of even no between two limits");
+			System.out.println("enter the first limit");
+			int m = Scan.nextInt();
+			System.out.println("enter the Second limit");
+			int n = Scan.nextInt();
+			int i,sum=0;
+			if(m<n){
+			  for(i=m;i<=n;i++){
+			     if(i%2==0)
+				    sum=sum+i;
+			  }
+			  System.out.println("sum of even numbers is"+sum);
+			}
+			else
+			  System.out.println("first limit should be greater then second limit");	
+           }
+		   }

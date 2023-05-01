@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Marks{
+    public static void main(String[] args) {
+        Scanner Scan=new Scanner(System.in);
+        int Marks[]=new int[5];
+        int i,sum=0,avg=0;
+        for(i=0;i<Marks.length;i++){
+          System.out.println("enter the "+(i+1)+" subject marks");
+          int x= Scan.nextInt();
+          Marks[i]=x;
+          if(Marks[i]<0||Marks[i]>100){
+              System.out.println("enter the correct marks");
+              i=i-1;
+          }
+          sum=sum+Marks[i];
+          avg=sum/Marks.length;
+        }
+        System.out.println("sum of all the marks is "+sum);
+        System.out.println("average of all the marks is "+avg);
+        
+        int lowest=Marks[0];
+        int highest=Marks[0];
+          
+          for(i=1;i<Marks.length;i++){
+              if(Marks[i]<lowest)
+                 lowest=Marks[i];
+              if(Marks[i]>highest)
+                 highest=Marks[i];
+          }
+          System.out.println("The lowest marks is "+lowest);
+          System.out.println("The highest marks is "+highest);
+         
+         for(int k=0;k<Marks.length;k++){
+            System.out.println("the marks in subject "+k+" is "+Marks[k]);
+        }      
+        
+        }
+    }

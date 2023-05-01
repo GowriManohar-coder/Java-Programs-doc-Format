@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class SplitRepeat{
+  public static void main(String args[]){
+      Scanner Scan = new Scanner(System.in);
+	  System.out.println("Enter the sentence:-");
+	  String sent=Scan.nextLine();
+	  String sentU=sent.toUpperCase();
+	  char A,E,I,O,U;
+	  String words[]=sentU.split(" ");
+	  for(String word:words){
+	      String rep=word.repeat(word.length());
+	      System.out.println(rep);
+	      
+	    }    
+  }
+}

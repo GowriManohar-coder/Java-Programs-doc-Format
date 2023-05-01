@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Vowels{
+  public static void main(String args[]){
+      Scanner Scan = new Scanner(System.in);
+	  System.out.println("Enter the sentence:-");
+	  String sent=Scan.nextLine();
+	  String sentU=sent.toUpperCase();
+	  char A,E,I,O,U;
+	  int x=0,count=0;
+	  for(int i=0;i<sentU.length();i++){
+		  char ch=sentU.charAt(i);
+		  if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+			count++;
+		  if(ch==' ')
+		    x++;
+	  }
+	  int cons=sentU.length()-count-x;
+	  System.out.println("no of vowels:- "+count);
+	  System.out.println("no of consonents:- "+cons);
+  }
+  }

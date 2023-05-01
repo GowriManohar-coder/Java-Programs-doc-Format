@@ -1,0 +1,22 @@
+import java.util.Scanner;
+    class ReverseDigit{
+	   public static void main(String args[]){
+	   Scanner Scan=new Scanner(System.in);
+	    System.out.println("sum of digits in a number");
+		System.out.println("enter a digit to find factorial:- ");
+		int x = Scan.nextInt();
+		int i,sum=0;
+		int digit=1;
+		
+		if(x<12){
+		for(i=1;i<=x;i++){
+		   
+		   digit=digit*i;
+		   }
+		  System.out.println(digit);
+		}
+		else
+		System.out.println("only less then 12 factorial accepted");
+		
+	   }
+	}

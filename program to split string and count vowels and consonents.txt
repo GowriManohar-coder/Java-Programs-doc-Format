@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class SplitVowels{
+  public static void main(String args[]){
+      Scanner Scan = new Scanner(System.in);
+	  System.out.println("Enter the sentence:-");
+	  String sent=Scan.nextLine();
+	  String sentU=sent.toUpperCase();
+	  char A,E,I,O,U;
+	  String words[]=sentU.split(" ");
+	  for(String word:words){
+	      System.out.print(word+"   ");
+	      int x=0,count=0;
+	    for(int k=0;k<word.length();k++){
+	        char ch = word.charAt(k);
+	      if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+			count++;
+		  if(ch==' ')
+		    x++;
+	  }
+	  int cons=word.length()-count-x;
+	  System.out.print(count+"  ");
+	  System.out.println(cons);
+	    }    
+  }
+}
